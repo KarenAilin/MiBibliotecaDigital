@@ -1,0 +1,30 @@
+Algoritmo MiBibliotecaDigital
+	escribir "¡¡Bienvenido/a a Mi Biblioteca Digital!!";
+	repetir
+	    escribir "¿Desea ingresar un libro a la estantería?";
+	    escribir "1.Si";
+	    escribir "2.No";
+	    leer respuesta;
+  	    si respuesta = "1" entonces;   
+	       Escribir "Ingrese el nombre del libro que desea organizar";
+	       leer nombreLibro;
+	       escribir "Seleccione la opción correcta sobre el avance de su lectura";
+	       escribir "3.El libro está terminado";
+	       escribir "4.El libro está leyéndose";
+	       escribir "5.El libro aún no se leyó";
+	       leer avanceLectura;
+	       si avanceLectura="3" Entonces;
+		      Escribir nombreLibro, " se guardará en la sección de libros Leídos";
+		   sino
+			  si avanceLectura="4" Entonces;
+			      Escribir nombreLibro, " se guardará en la sección Leyendo";
+			  sino  
+	               si avanceLectura="5" Entonces;
+	                  Escribir nombreLibro, " se guardará en la sección de libros No leídos";
+	               FinSi
+	          FinSi
+	       FinSi
+	   FinSi
+   hasta que respuesta = "2"; 
+   escribir "Gracias por utilizar Mi Biblioteca Digital, que tenga buen dia!!";
+FinAlgoritmo
